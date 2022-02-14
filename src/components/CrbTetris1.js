@@ -60,6 +60,7 @@ const CrbTetris1 = () => {
 	//============
 	//============
 	const handleStart = () => {
+		setRowsClearedCount(0);
 		setGameOver(false);
 		setGameRunning(true);
 		spawnPlayer();
@@ -68,6 +69,7 @@ const CrbTetris1 = () => {
 	//============
 	//============
 	const handleReset = () => {
+		setRowsClearedCount(0);
 		resetPlayField();
 		resetPlayer();
 		setGameRunning(false);
